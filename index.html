@@ -11,6 +11,7 @@
   <meta property="og:image" content="https://samlevinpm.github.io/images/og-image.jpg">
   <meta property="og:url" content="https://samlevinpm.github.io">
   <link rel="icon" href="favicon.svg" type="image/svg+xml">
+  <link rel="icon" href="favicon.png" type="image/png">
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
   <link rel="stylesheet" href="style.css">
@@ -339,33 +340,19 @@
       <div class="contact-inner fade-in">
         <h2>Let's Work Together</h2>
         <p>Whether you want to talk product strategy, fintech, community building, or just connect — I'd love to hear from you.</p>
-        <div id="contact-default" style="display:flex; flex-direction:column; align-items:center; gap:4px;">
+        <div style="display:flex; flex-direction:column; align-items:center; gap:4px;">
           <a href="https://www.linkedin.com/in/samlevin2" target="_blank" rel="noopener noreferrer" class="btn-white">
             Reach out on LinkedIn
             <svg width="14" height="14" viewBox="0 0 14 14" fill="none" aria-hidden="true">
               <path d="M3 7h8M7 3l4 4-4 4" stroke="currentColor" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round"/>
             </svg>
           </a>
-          <button type="button" class="resume-text-trigger" data-resume-trigger>
+          <a href="Sam-Levin-Resume.pdf" download="Sam-Levin-Resume.pdf" class="resume-text-trigger">
             or download my resume
-          </button>
+          </a>
         </div>
 
         <div id="contact-resume" hidden>
-          <form id="resume-form">
-            <input type="text" name="honeypot" tabindex="-1" autocomplete="off" aria-hidden="true" style="display:none">
-            <p class="resume-form-hint">Leave your details and the PDF downloads immediately.</p>
-            <div class="resume-form-fields">
-              <input type="text" name="from_name" required autocomplete="name" placeholder="Your name">
-              <input type="email" name="from_email" required autocomplete="email" placeholder="your@email.com">
-              <button type="submit" class="btn-white resume-submit-btn">
-                Get Resume
-                <svg width="14" height="14" viewBox="0 0 14 14" fill="none" aria-hidden="true">
-                  <path d="M7 2v8M3 8l4 4 4-4" stroke="currentColor" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round"/>
-                </svg>
-              </button>
-            </div>
-          </form>
           <div id="resume-success" hidden>
             <p class="resume-form-hint">Thanks — here's your copy:</p>
             <a id="resume-download-link" class="btn-white" download="Sam-Levin-Resume.pdf">
@@ -391,7 +378,6 @@
     </div>
   </footer>
 
-  <script src="https://cdn.jsdelivr.net/npm/@emailjs/browser@4/dist/email.min.js"></script>
   <script src="script.js"></script>
 </body>
 </html>
