@@ -1,0 +1,13 @@
+# macOS
+.DS_Store
+.AppleDouble
+.LSOverrideAttribute
+
+# Source / raw files — not for public repo
+_source/
+
+# Editor / OS
+.vscode/
+*.swp
+*.swo
+Thumbs.db

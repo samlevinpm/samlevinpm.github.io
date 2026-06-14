@@ -12,7 +12,7 @@
   <meta property="og:url" content="https://samlevinpm.github.io">
   <link rel="icon" href="favicon.svg" type="image/svg+xml">
   <link rel="icon" href="favicon.png" type="image/png" sizes="32x32">
-  <link rel="apple-touch-icon" href="favicon.png">
+  <link rel="apple-touch-icon" sizes="180x180" href="apple-touch-icon.png">
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
   <link rel="stylesheet" href="style.css">
@@ -96,51 +96,284 @@
       <div class="work-grid">
 
         <article class="work-card fade-in">
-          <div style="display:flex; justify-content:space-between; align-items:center; gap:12px; min-height:56px">
+          <div class="work-card-top-row">
             <div class="work-card-tag">Fintech · Product Management</div>
             <img src="images/Abrigo_Logo-4239563510.jpg" alt="Abrigo" loading="lazy" style="height:48px; width:auto; flex-shrink:0">
           </div>
-          <h3>Abrigo</h3>
-          <p class="role">Senior Product Manager, Fintech SaaS · May 2021 – Present</p>
-          <p>At Abrigo, a fintech SaaS company serving 2,500+ financial institutions, I lead product strategy and development for a suite of lending automation tools — including <strong>Automation Flows</strong>, <strong>Decision Models</strong>, <strong>Charm</strong>, and <strong>Rate Sheets</strong>. The work spans the full product lifecycle: running client discovery, shaping roadmap strategy, partnering with engineering and design, and delivering solutions that let banks and credit unions automate loan origination from application to decision.</p>
-          <div class="award-badge">
-            <svg width="12" height="12" viewBox="0 0 12 12" fill="none" aria-hidden="true">
-              <path d="M6 1l1.3 2.7 3 .4-2.2 2.1.5 3L6 7.8 3.4 9.2l.5-3L1.7 4.1l3-.4L6 1z" fill="currentColor"/>
-            </svg>
-            Powerhouse Performer: Innovation · Apr 2023
+          <div class="work-card-split">
+            <div class="work-card-meta">
+              <h3>Abrigo</h3>
+              <p class="role">Senior Product Manager, Fintech SaaS</p>
+              <p class="work-card-dates">May 2021 – Present</p>
+              <div class="award-badge">
+                <svg width="12" height="12" viewBox="0 0 12 12" fill="none" aria-hidden="true">
+                  <path d="M6 1l1.3 2.7 3 .4-2.2 2.1.5 3L6 7.8 3.4 9.2l.5-3L1.7 4.1l3-.4L6 1z" fill="currentColor"/>
+                </svg>
+                Powerhouse Performer · Apr 2023
+              </div>
+              <a href="https://www.abrigo.com" target="_blank" rel="noopener noreferrer" class="card-link">
+                Visit abrigo.com
+                <svg width="12" height="12" viewBox="0 0 12 12" fill="none" aria-hidden="true">
+                  <path d="M2.5 6h7M5.5 2.5L9 6l-3.5 3.5" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/>
+                </svg>
+              </a>
+            </div>
+            <div class="work-card-prose">
+              <p>At Abrigo, a fintech SaaS company serving 2,500+ financial institutions, I lead product strategy and development for a suite of lending automation tools — including <strong>Automation Flows</strong>, <strong>Decision Models</strong>, <strong>Charm</strong>, and <strong>Rate Sheets</strong>. The work spans the full product lifecycle: running client discovery, shaping roadmap strategy, partnering with engineering and design, and delivering solutions that let banks and credit unions automate loan origination from application to decision.</p>
+            </div>
           </div>
-          <a href="https://www.abrigo.com" target="_blank" rel="noopener noreferrer" class="card-link">
-            Visit abrigo.com
-            <svg width="12" height="12" viewBox="0 0 12 12" fill="none" aria-hidden="true">
-              <path d="M2.5 6h7M5.5 2.5L9 6l-3.5 3.5" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/>
-            </svg>
-          </a>
+          <div class="work-card-expand-wrap">
+            <button class="work-card-expand-btn" aria-expanded="false">
+              7 products
+              <svg width="12" height="12" viewBox="0 0 12 12" fill="none" aria-hidden="true">
+                <path d="M2 4l4 4 4-4" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/>
+              </svg>
+            </button>
+            <div class="work-card-projects">
+              <div class="work-card-projects-inner">
+                <p class="work-card-projects-label">Products I own at Abrigo</p>
+                <div class="mini-project-grid">
+
+                  <div class="mini-card">
+                    <div class="mini-card-row">
+                      <span class="mini-card-name">Automation Flows</span>
+                      <span class="badge-mini-active">Active</span>
+                    </div>
+                    <p class="mini-card-desc">Flagship lending automation platform — straight-through loan processing integrated with core banking and third-party data providers.</p>
+                  </div>
+
+                  <div class="mini-card">
+                    <div class="mini-card-row">
+                      <span class="mini-card-name">Decision Models</span>
+                      <span class="badge-mini-active">Active</span>
+                    </div>
+                    <p class="mini-card-desc">Configurable rules engine that applies automated credit decisions to loan applications based on institution policy.</p>
+                  </div>
+
+                  <div class="mini-card">
+                    <div class="mini-card-row">
+                      <span class="mini-card-name">Rate Sheets</span>
+                      <span class="badge-mini-active">Active</span>
+                    </div>
+                    <p class="mini-card-desc">Dynamic pricing tool for managing interest rates across loan products by type, term, and credit tier.</p>
+                  </div>
+
+                  <div class="mini-card">
+                    <div class="mini-card-row">
+                      <span class="mini-card-name">Charm</span>
+                      <span class="badge-mini-active">Active</span>
+                    </div>
+                    <p class="mini-card-desc">AI-powered small business credit scoring tool — analyzes business data to generate risk scores that help lenders make faster, more consistent lending decisions.</p>
+                    <a href="https://www.charmsolutions.ai" target="_blank" rel="noopener noreferrer" class="card-link" style="display:inline-flex; margin-top:6px">
+                      Visit site
+                      <svg width="10" height="10" viewBox="0 0 12 12" fill="none" aria-hidden="true">
+                        <path d="M2.5 6h7M5.5 2.5L9 6l-3.5 3.5" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/>
+                      </svg>
+                    </a>
+                  </div>
+
+                  <div class="mini-card">
+                    <div class="mini-card-row">
+                      <span class="mini-card-name">Global Automation</span>
+                      <span class="badge-mini-active">Active</span>
+                    </div>
+                    <p class="mini-card-desc">Legacy automation infrastructure supporting high-volume rule-based decisioning workflows across the lending platform.</p>
+                  </div>
+
+                  <div class="mini-card">
+                    <div class="mini-card-row">
+                      <span class="mini-card-name">Workflow</span>
+                      <span class="badge-mini-supporting">Supporting PM</span>
+                    </div>
+                    <p class="mini-card-desc">Configurable loan origination workflow engine — deep domain expertise as supporting PM alongside the primary product owner.</p>
+                  </div>
+
+                  <div class="mini-card">
+                    <div class="mini-card-row">
+                      <span class="mini-card-name">CRM</span>
+                      <span class="badge-mini-handed-off">Handed Off</span>
+                    </div>
+                    <p class="mini-card-desc">Borrower relationship pipeline for the lending platform — inherited post-launch and maintained with targeted enhancements before transitioning to another team.</p>
+                  </div>
+
+                </div>
+              </div>
+            </div>
+          </div>
         </article>
 
         <article class="work-card fade-in">
-          <div style="display:flex; justify-content:space-between; align-items:center; gap:12px; min-height:56px">
+          <div class="work-card-top-row">
             <div class="work-card-tag">Software · Agile PM</div>
             <img src="images/MotionMobsLogo.png" alt="MotionMobs" loading="lazy" style="height:24px; width:auto; flex-shrink:0">
           </div>
-          <h3>MotionMobs</h3>
-          <p class="role">Project Manager · Sep 2018 – May 2021</p>
-          <p>Led a team of 3–6 developers through 20+ projects at a custom software development firm. Doubled project capacity, strengthened Agile practices, and shipped <strong>GuideSafe</strong> — Alabama's COVID-19 contact tracing app built with Apple, Google, and UAB, earning the <strong>2020 UAB Community Innovator of the Year Award</strong>.</p>
-          <a href="https://motionmobs.com" target="_blank" rel="noopener noreferrer" class="card-link">
-            Visit motionmobs.com
-            <svg width="12" height="12" viewBox="0 0 12 12" fill="none" aria-hidden="true">
-              <path d="M2.5 6h7M5.5 2.5L9 6l-3.5 3.5" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/>
-            </svg>
-          </a>
+          <div class="work-card-split">
+            <div class="work-card-meta">
+              <h3>MotionMobs</h3>
+              <p class="role">Project Manager</p>
+              <p class="work-card-dates">Sep 2018 – May 2021</p>
+              <a href="https://motionmobs.com" target="_blank" rel="noopener noreferrer" class="card-link">
+                Visit motionmobs.com
+                <svg width="12" height="12" viewBox="0 0 12 12" fill="none" aria-hidden="true">
+                  <path d="M2.5 6h7M5.5 2.5L9 6l-3.5 3.5" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/>
+                </svg>
+              </a>
+            </div>
+            <div class="work-card-prose">
+              <p>Led a team of 3–6 developers through 20+ projects at a custom software development firm. Doubled project capacity, strengthened Agile practices, and shipped <strong>GuideSafe</strong> — Alabama's COVID-19 contact tracing app built with Apple, Google, and UAB, earning the <strong>2020 UAB Community Innovator of the Year Award</strong>.</p>
+            </div>
+          </div>
+          <div class="work-card-expand-wrap">
+            <button class="work-card-expand-btn" aria-expanded="false">
+              10 projects
+              <svg width="12" height="12" viewBox="0 0 12 12" fill="none" aria-hidden="true">
+                <path d="M2 4l4 4 4-4" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/>
+              </svg>
+            </button>
+            <div class="work-card-projects">
+              <div class="work-card-projects-inner">
+                <p class="work-card-projects-label">Some of the work at MotionMobs</p>
+                <div class="mini-project-grid">
+
+                  <div class="mini-card">
+                    <img src="https://sites.uab.edu/guidesafe/files/2020/07/GuideSafe-logo.png" alt="GuideSafe" class="mini-card-icon-sm" loading="lazy">
+                    <span class="mini-card-cat">Public Health · Mobile</span>
+                    <span class="mini-card-name">GuideSafe</span>
+                    <p class="mini-card-desc">Alabama's official COVID-19 exposure notification app, built with UAB, ADPH, Apple &amp; Google.</p>
+                    <div class="award-badge" style="font-size:.62rem; padding:3px 8px; margin-top:2px">
+                      <svg width="10" height="10" viewBox="0 0 12 12" fill="none" aria-hidden="true">
+                        <path d="M6 1l1.3 2.7 3 .4-2.2 2.1.5 3L6 7.8 3.4 9.2l.5-3L1.7 4.1l3-.4L6 1z" fill="currentColor"/>
+                      </svg>
+                      2020 UAB Innovator of the Year
+                    </div>
+                    <a href="https://www.guidesafe.org" target="_blank" rel="noopener noreferrer" class="card-link" style="display:inline-flex; margin-top:6px">
+                      Visit site
+                      <svg width="10" height="10" viewBox="0 0 12 12" fill="none" aria-hidden="true">
+                        <path d="M2.5 6h7M5.5 2.5L9 6l-3.5 3.5" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/>
+                      </svg>
+                    </a>
+                  </div>
+
+                  <div class="mini-card">
+                    <img src="images/PoisonPerilsIcon.png" alt="Poison Perils" class="mini-card-icon-sm" loading="lazy">
+                    <span class="mini-card-cat">Public Health · Mobile</span>
+                    <span class="mini-card-name">Poison Perils</span>
+                    <p class="mini-card-desc">Educational app on household poisons in Alabama with direct emergency contact access.</p>
+                    <a href="https://apps.apple.com/us/app/poison-perils-of-alabama/id688824388" target="_blank" rel="noopener noreferrer" class="card-link" style="display:inline-flex; margin-top:6px">
+                      App Store
+                      <svg width="10" height="10" viewBox="0 0 12 12" fill="none" aria-hidden="true">
+                        <path d="M2.5 6h7M5.5 2.5L9 6l-3.5 3.5" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/>
+                      </svg>
+                    </a>
+                  </div>
+
+                  <div class="mini-card">
+                    <img src="images/Sandwhichicon.png" alt="Sandwhich" class="mini-card-icon-sm" loading="lazy">
+                    <span class="mini-card-cat">Fun · Mobile</span>
+                    <span class="mini-card-name">Sandwhich</span>
+                    <p class="mini-card-desc">Image recognition app that settles the age-old "is it a sandwich?" debate.</p>
+                    <a href="https://github.com/MotionMobs/Sandwhich" target="_blank" rel="noopener noreferrer" class="card-link" style="display:inline-flex; margin-top:6px">
+                      GitHub
+                      <svg width="10" height="10" viewBox="0 0 12 12" fill="none" aria-hidden="true">
+                        <path d="M2.5 6h7M5.5 2.5L9 6l-3.5 3.5" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/>
+                      </svg>
+                    </a>
+                  </div>
+
+                  <div class="mini-card">
+                    <img src="images/TourSelmaIcon.png" alt="Tour Selma" class="mini-card-icon-sm" loading="lazy">
+                    <span class="mini-card-cat">History · Mobile</span>
+                    <span class="mini-card-name">Tour Selma</span>
+                    <p class="mini-card-desc">Location-aware audio tour of Selma, AL's role in Civil Rights and Voting Rights history.</p>
+                    <a href="https://apps.apple.com/us/app/tour-selma/id1477070272" target="_blank" rel="noopener noreferrer" class="card-link" style="display:inline-flex; margin-top:6px">
+                      App Store
+                      <svg width="10" height="10" viewBox="0 0 12 12" fill="none" aria-hidden="true">
+                        <path d="M2.5 6h7M5.5 2.5L9 6l-3.5 3.5" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/>
+                      </svg>
+                    </a>
+                  </div>
+
+                  <div class="mini-card">
+                    <img src="images/WillingWorthIcon.jpg" alt="WillingWorth" class="mini-card-icon-sm" loading="lazy">
+                    <span class="mini-card-cat">Legal Tech · Web</span>
+                    <span class="mini-card-name">WillingWorth</span>
+                    <p class="mini-card-desc">Web app generating personalized will documents for all 50 states via a logic-based questionnaire.</p>
+                    <a href="https://motionmobs.com/casestudies/willingworth/" target="_blank" rel="noopener noreferrer" class="card-link" style="display:inline-flex; margin-top:6px">
+                      Case study
+                      <svg width="10" height="10" viewBox="0 0 12 12" fill="none" aria-hidden="true">
+                        <path d="M2.5 6h7M5.5 2.5L9 6l-3.5 3.5" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/>
+                      </svg>
+                    </a>
+                  </div>
+
+                  <div class="mini-card">
+                    <img src="images/GirlspringIcon.png" alt="GirlSpring" class="mini-card-icon-sm" loading="lazy">
+                    <span class="mini-card-cat">Community · Mobile</span>
+                    <span class="mini-card-name">GirlSpring</span>
+                    <p class="mini-card-desc">Digital community platform empowering teen girls with resources, peer connection, and mentorship.</p>
+                    <a href="https://apps.apple.com/us/app/girlspring/id1520838902" target="_blank" rel="noopener noreferrer" class="card-link" style="display:inline-flex; margin-top:6px">
+                      App Store
+                      <svg width="10" height="10" viewBox="0 0 12 12" fill="none" aria-hidden="true">
+                        <path d="M2.5 6h7M5.5 2.5L9 6l-3.5 3.5" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/>
+                      </svg>
+                    </a>
+                  </div>
+
+                  <div class="mini-card">
+                    <img src="images/PorterBillingIcon.png" alt="Porter Freight" class="mini-card-icon-sm" loading="lazy">
+                    <span class="mini-card-cat">Freight · Mobile</span>
+                    <span class="mini-card-name">Porter Freight</span>
+                    <p class="mini-card-desc">Native mobile app for drivers to process loads and receive freight factoring funding on the road.</p>
+                    <a href="https://motionmobs.com/casestudies/porter-freight-funding/" target="_blank" rel="noopener noreferrer" class="card-link" style="display:inline-flex; margin-top:6px">
+                      Case study
+                      <svg width="10" height="10" viewBox="0 0 12 12" fill="none" aria-hidden="true">
+                        <path d="M2.5 6h7M5.5 2.5L9 6l-3.5 3.5" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/>
+                      </svg>
+                    </a>
+                  </div>
+
+                  <div class="mini-card">
+                    <img src="images/KwikLetterIcon.png" alt="KwikLetter" class="mini-card-icon-sm" loading="lazy">
+                    <span class="mini-card-cat">Civic Tech · Mobile</span>
+                    <span class="mini-card-name">KwikLetter</span>
+                    <p class="mini-card-desc">Mail letters to your U.S. Representatives directly from your phone.</p>
+                  </div>
+
+                  <div class="mini-card">
+                    <img src="images/PropsIcon.png" alt="Props" class="mini-card-icon-sm" loading="lazy">
+                    <span class="mini-card-cat">Social · Mobile</span>
+                    <span class="mini-card-name">Props</span>
+                    <p class="mini-card-desc">Send digital recognition to service industry workers who make your day.</p>
+                  </div>
+
+                  <div class="mini-card">
+                    <img src="images/KustomKineticsK2ISNPicon.png" alt="KustomKinetics" class="mini-card-icon-sm" loading="lazy">
+                    <span class="mini-card-cat">Medical · Mobile</span>
+                    <span class="mini-card-name">KustomKinetics</span>
+                    <p class="mini-card-desc">Mobile ordering app for clinicians to browse and request medical support surfaces and positioning aids.</p>
+                  </div>
+
+                </div>
+              </div>
+            </div>
+          </div>
         </article>
 
         <article class="work-card fade-in">
-          <div style="display:flex; justify-content:space-between; align-items:center; gap:12px; min-height:56px">
+          <div class="work-card-top-row">
             <div class="work-card-tag">Entrepreneurship · Fellowship</div>
             <img src="images/venture-for-america-logo.png" alt="Venture for America" loading="lazy" style="height:18px; width:auto; flex-shrink:0">
           </div>
-          <h3>Venture for America</h3>
-          <p class="role">Fellow · Birmingham, AL · Jul 2018 – Jul 2020</p>
-          <p>Joined VFA's network of young entrepreneurs supporting startup ecosystems across the U.S. Served as an Ideation Session Leader and created a report on improving design thinking workshops — recommendations later adopted by VFA nationally.</p>
+          <div class="work-card-split">
+            <div class="work-card-meta">
+              <h3>Venture for America</h3>
+              <p class="role">Fellow · Birmingham, AL</p>
+              <p class="work-card-dates">Jul 2018 – Jul 2020</p>
+            </div>
+            <div class="work-card-prose">
+              <p>Joined VFA's network of young entrepreneurs supporting startup ecosystems across the U.S. Served as an Ideation Session Leader and created a report on improving design thinking workshops — recommendations later adopted by VFA nationally.</p>
+            </div>
+          </div>
         </article>
 
       </div>

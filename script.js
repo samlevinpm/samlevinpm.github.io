@@ -30,6 +30,15 @@ if (navToggle && nav) {
   });
 }
 
+// Expandable work card project panels
+document.querySelectorAll('.work-card-expand-btn').forEach(btn => {
+  btn.addEventListener('click', () => {
+    const card = btn.closest('.work-card');
+    const isExpanded = card.classList.toggle('work-card--expanded');
+    btn.setAttribute('aria-expanded', String(isExpanded));
+  });
+});
+
 // Fade-in on scroll
 const observer = new IntersectionObserver(
   (entries) => entries.forEach(e => { if (e.isIntersecting) e.target.classList.add('visible'); }),
