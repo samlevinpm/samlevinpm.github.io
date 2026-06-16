@@ -528,6 +528,13 @@ h1, h2, h3, h4 { line-height: 1.2; font-weight: 700; }
   margin-top: 6px;
 }
 
+.aqi-context {
+  font-size: .8125rem;
+  color: var(--text-light);
+  line-height: 1.6;
+  margin-bottom: 16px;
+}
+
 @media (max-width: 768px) {
   .aqi-grid { grid-template-columns: repeat(2, 1fr); }
 }
