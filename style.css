@@ -471,6 +471,13 @@ h1, h2, h3, h4 { line-height: 1.2; font-weight: 700; }
   margin-top: 48px;
 }
 
+.aqi-card-wrap {
+  border: 1.5px solid var(--border);
+  border-radius: var(--radius-lg);
+  padding: 24px;
+  background: var(--bg-alt);
+}
+
 .aqi-label {
   font-size: 1rem;
   font-weight: 600;

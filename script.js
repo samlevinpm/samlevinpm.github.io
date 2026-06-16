@@ -70,7 +70,7 @@ document.querySelectorAll('.work-card-expand-btn').forEach(btn => {
     if (aqi === null) return `<div class="aqi-card"><span class="aqi-city">${name}</span><span class="aqi-status" style="color:var(--text-muted)">Unavailable</span></div>`;
     const { label, color } = aqiMeta(aqi);
     return `
-      <div class="aqi-card">
+      <div class="aqi-card" style="border-color:${color}">
         <span class="aqi-city">${name}</span>
         <span class="aqi-index" style="color:${color}">${aqi}</span>
         <span class="aqi-status" style="color:${color}">${label}</span>
