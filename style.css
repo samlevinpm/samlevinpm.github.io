@@ -472,12 +472,10 @@ h1, h2, h3, h4 { line-height: 1.2; font-weight: 700; }
 }
 
 .aqi-label {
-  font-size: .8125rem;
-  font-weight: 500;
-  color: var(--text-muted);
-  text-transform: uppercase;
-  letter-spacing: .06em;
-  margin-bottom: 16px;
+  font-size: 1rem;
+  font-weight: 600;
+  color: var(--text);
+  margin-bottom: 4px;
 }
 
 .aqi-grid {
@@ -529,10 +527,10 @@ h1, h2, h3, h4 { line-height: 1.2; font-weight: 700; }
 }
 
 .aqi-context {
-  font-size: .8125rem;
-  color: var(--text-light);
+  font-size: .875rem;
+  color: var(--text-muted);
   line-height: 1.6;
-  margin-bottom: 16px;
+  margin-bottom: 20px;
 }
 
 @media (max-width: 768px) {
