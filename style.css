@@ -675,8 +675,16 @@ h1, h2, h3, h4 { line-height: 1.2; font-weight: 700; }
   display: flex;
   align-items: center;
   justify-content: space-between;
+  position: relative;
   font-size: .8125rem;
   color: rgba(255,255,255,.4);
+}
+
+.footer-center {
+  position: absolute;
+  left: 50%;
+  transform: translateX(-50%);
+  white-space: nowrap;
 }
 
 .footer-inner a {
