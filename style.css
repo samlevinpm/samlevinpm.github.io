@@ -465,6 +465,78 @@ h1, h2, h3, h4 { line-height: 1.2; font-weight: 700; }
 }
 
 /* ---------------------------------------------------------
+   AQI cards
+   --------------------------------------------------------- */
+.aqi-section {
+  margin-top: 48px;
+}
+
+.aqi-label {
+  font-size: .8125rem;
+  font-weight: 500;
+  color: var(--text-muted);
+  text-transform: uppercase;
+  letter-spacing: .06em;
+  margin-bottom: 16px;
+}
+
+.aqi-grid {
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  gap: 12px;
+}
+
+.aqi-card {
+  background: var(--bg);
+  border: 1px solid var(--border);
+  border-radius: 12px;
+  padding: 20px 16px;
+  display: flex;
+  flex-direction: column;
+  gap: 4px;
+}
+
+.aqi-loading {
+  min-height: 110px;
+  align-items: center;
+  justify-content: center;
+  color: var(--text-muted);
+  font-size: .875rem;
+}
+
+.aqi-city {
+  font-size: .8125rem;
+  font-weight: 600;
+  color: var(--text-muted);
+  margin-bottom: 6px;
+}
+
+.aqi-index {
+  font-size: 2rem;
+  font-weight: 700;
+  line-height: 1;
+}
+
+.aqi-status {
+  font-size: .875rem;
+  font-weight: 600;
+}
+
+.aqi-pm {
+  font-size: .75rem;
+  color: var(--text-muted);
+  margin-top: 6px;
+}
+
+@media (max-width: 768px) {
+  .aqi-grid { grid-template-columns: repeat(2, 1fr); }
+}
+
+@media (max-width: 480px) {
+  .aqi-grid { grid-template-columns: 1fr; }
+}
+
+/* ---------------------------------------------------------
    Education card
    --------------------------------------------------------- */
 .edu-card {
