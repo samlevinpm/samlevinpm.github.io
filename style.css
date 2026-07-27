@@ -362,6 +362,7 @@ h1, h2, h3, h4 { line-height: 1.2; font-weight: 700; }
   display: flex;
   flex-direction: column;
   gap: 14px;
+  min-width: 0;
   transition: box-shadow var(--transition), transform var(--transition);
 }
 
@@ -613,12 +614,7 @@ h1, h2, h3, h4 { line-height: 1.2; font-weight: 700; }
   border-radius: 999px;
   color: var(--text-muted);
   background: var(--white);
-  transition: border-color var(--transition), color var(--transition);
-}
-
-.tag:hover {
-  border-color: var(--accent);
-  color: var(--accent);
+  user-select: none;
 }
 
 /* ---------------------------------------------------------
@@ -1160,6 +1156,46 @@ h1, h2, h3, h4 { line-height: 1.2; font-weight: 700; }
 }
 
 /* ---------------------------------------------------------
+   Two-column work card layout
+   --------------------------------------------------------- */
+.work-card-top-row {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  gap: 12px;
+}
+
+.work-card-split {
+  display: grid;
+  grid-template-columns: 220px 1fr;
+  gap: 0;
+  align-items: start;
+}
+
+.work-card-meta {
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+  padding-right: 32px;
+  border-right: 1px solid var(--border);
+}
+
+.work-card-meta .award-badge {
+  margin-top: 0;
+}
+
+.work-card-prose {
+  padding-left: 32px;
+}
+
+.work-card-dates {
+  font-size: .8125rem;
+  font-weight: 500;
+  color: var(--text-light);
+  line-height: 1.4;
+}
+
+/* ---------------------------------------------------------
    Responsive
    --------------------------------------------------------- */
 @media (max-width: 768px) {
@@ -1243,6 +1279,12 @@ h1, h2, h3, h4 { line-height: 1.2; font-weight: 700; }
     text-align: center;
   }
 
+  .footer-center {
+    position: static;
+    transform: none;
+    white-space: normal;
+  }
+
   .hero-scroll-hint { margin-top: 48px; }
 }
 
@@ -1250,162 +1292,6 @@ h1, h2, h3, h4 { line-height: 1.2; font-weight: 700; }
   .hero-name { letter-spacing: -.03em; }
   .work-grid { grid-template-columns: 1fr; }
   .project-grid { grid-template-columns: 1fr; }
-}
-
-/* ---------------------------------------------------------
-   Resume text trigger & inline form (contact section)
-   --------------------------------------------------------- */
-.resume-text-trigger {
-  display: block;
-  margin-top: 8px;
-  background: none;
-  border: none;
-  font-family: inherit;
-  font-size: .875rem;
-  color: rgba(255,255,255,.45);
-  cursor: pointer;
-  text-decoration: underline;
-  text-underline-offset: 3px;
-  transition: color var(--transition);
-}
-
-.resume-text-trigger:hover {
-  color: rgba(255,255,255,.8);
-}
-
-.resume-form-hint {
-  font-size: .9375rem;
-  color: rgba(255,255,255,.55);
-  margin-bottom: 20px;
-  line-height: 1.6;
-}
-
-.resume-form-fields {
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  gap: 12px;
-  margin-bottom: 8px;
-}
-
-.resume-form-fields input {
-  width: 100%;
-  max-width: 320px;
-  padding: 13px 20px;
-  border-radius: 999px;
-  border: 1.5px solid rgba(255,255,255,.2);
-  background: rgba(255,255,255,.08);
-  color: #fff;
-  font-family: inherit;
-  font-size: .9375rem;
-  text-align: center;
-  outline: none;
-  transition: border-color 180ms ease, background 180ms ease;
-}
-
-.resume-form-fields input:focus {
-  border-color: rgba(255,255,255,.55);
-  background: rgba(255,255,255,.13);
-}
-
-.resume-form-fields input::placeholder {
-  color: rgba(255,255,255,.3);
-}
-
-.resume-submit-btn {
-  width: 100%;
-  max-width: 320px;
-  justify-content: center;
-  border: none;
-  cursor: pointer;
-  font-family: inherit;
-}
-
-.resume-submit-btn:disabled {
-  opacity: .6;
-  cursor: not-allowed;
-  transform: none;
-}
-
-.resume-cancel {
-  display: block;
-  margin-top: 16px;
-  background: none;
-  border: none;
-  color: rgba(255,255,255,.3);
-  font-family: inherit;
-  font-size: .8125rem;
-  cursor: pointer;
-  transition: color 180ms ease;
-}
-
-.resume-cancel:hover {
-  color: rgba(255,255,255,.65);
-}
-
-#contact-resume {
-  padding-top: 12px;
-}
-
-#resume-success {
-  background: #E8621A;
-  border-radius: 12px;
-  padding: 24px 28px;
-  margin-bottom: 4px;
-}
-
-#resume-success .resume-form-hint {
-  color: rgba(255,255,255,.9);
-  margin-bottom: 16px;
-}
-
-#resume-success .btn-white {
-  width: 100%;
-  max-width: 320px;
-  justify-content: center;
-  border: none;
-  cursor: pointer;
-  font-family: inherit;
-}
-
-/* ---------------------------------------------------------
-   Two-column work card layout
-   --------------------------------------------------------- */
-.work-card-top-row {
-  display: flex;
-  justify-content: space-between;
-  align-items: center;
-  gap: 12px;
-}
-
-.work-card-split {
-  display: grid;
-  grid-template-columns: 220px 1fr;
-  gap: 0;
-  align-items: start;
-}
-
-.work-card-meta {
-  display: flex;
-  flex-direction: column;
-  gap: 10px;
-  padding-right: 32px;
-  border-right: 1px solid var(--border);
-}
-
-.work-card-meta .award-badge {
-  margin-top: 0;
-}
-
-.work-card-prose {
-  padding-left: 32px;
-}
-
-.work-card-dates {
-  font-size: .8125rem;
-  font-weight: 500;
-  color: var(--text-light);
-  line-height: 1.4;
 }
 
 /* ---------------------------------------------------------
